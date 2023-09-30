@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transform: 0.2s linear;
+}
+
+/* css variables */
+:root {
+    --white: #fff;
+    --dark-gray: #f1efef;
+    --light-gray: #4504db;
+    --dark-bg: #222222;
+    --light-bg: #333333;
+    --yellow: #bac964;
+    --gold: #FFC96C;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--light-bg);
+}
+
+body {
+    background-color: var(--dark-bg);
+    background-blend-mode:soft-light;
+    background-image: url("sea2.jpg");
+    background-image: url("sea2.jpg");
+    background-repeat: repeat; 
+    background-size: 1440px 820px;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.heading {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.heading span {
+    font-weight: 700;
+}
+/*navbar stuff*/
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    color: var(--gold);
+    padding: 0 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.header .menu{
+    font-size: 2.5rem;
+    color: var(--gold);
+    cursor: pointer;
+    text-align: left;
+    display: none;
+    
+}
+
+/*home*/
+.home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(images/back.jpg);
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home .hero-text {
+    font-size: 6rem;
+    color: var(--dark-gray);
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.home .hero-text span {
+    font-weight: 800;
+}
+
+.home p {
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+/*header*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5rem 9%;
+    z-index: 100;
+}
+
+.header.active {
+    background-color: rgba(0,0,0,0.5);
+    padding: 3rem 9%;
+}
+
+.header.active .navbar a {
+    color: var(--dark-gray);
+}
+
+.header.active .navbar a:hover {
+    color: var(--yellow);
+}
+
+.header.active .menu {
+    color: var(--dark-bg);
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar a {
+    font-size: 1.5rem;
+    color: var(--gold);
+    padding: 0 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.header .menu {
+    font-size: 2.5rem;
+    color: var(--dark-bg);
+    cursor: pointer;
+    text-align: left;
+    display: none;
+}
+
+
+
+.columns {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-color: lightblue;
+  }
+  
+  .columns p {
+    break-inside: avoid-column; 
+    margin: 0; 
+  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
